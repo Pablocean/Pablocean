@@ -1,0 +1,13 @@
+{
+  "title": "Skill Radar",
+  "_comment": "Self-rated, 0-100. Edit these and the Charts workflow redraws the radar.",
+  "axes": [
+    { "label": "Backend / API Design",  "value": 92 },
+    { "label": "Spring Boot / JVM",     "value": 90 },
+    { "label": "Reactive / WebFlux",    "value": 82 },
+    { "label": "Real-time / WebSocket", "value": 80 },
+    { "label": "Databases Mongo / SQL", "value": 84 },
+    { "label": "AI & Agents",           "value": 76 },
+    { "label": "Frontend RN/React",     "value": 72 }
+  ]
+}

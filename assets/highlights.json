@@ -1,0 +1,11 @@
+{
+  "_comment": "Honest, real numbers for the highlights card. Each tile is a big value + small label. Edit and the Charts workflow redraws it.",
+  "title": "Pablo Perera Marcoleta",
+  "subtitle": "at a glance",
+  "tiles": [
+    { "value": "4.5", "label": "años en software (2021→)" },
+    { "value": "11",  "label": "repos públicos" },
+    { "value": "3×",  "label": "Pull Shark" },
+    { "value": "4",   "label": "posiciones: UCI → Lead" }
+  ]
+}

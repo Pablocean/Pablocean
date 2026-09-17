@@ -1,0 +1,12 @@
+{
+  "title": "Language Stack",
+  "_comment": "Hand-authored comfort scale 0-100 (resume + active GitHub use). Edit and the Charts workflow redraws it.",
+  "axes": [
+    { "label": "Java",        "value": 92 },
+    { "label": "TypeScript",  "value": 70 },
+    { "label": "JavaScript",  "value": 78 },
+    { "label": "Python",      "value": 66 },
+    { "label": "C# / .NET",   "value": 62 },
+    { "label": "SQL",         "value": 76 }
+  ]
+}

@@ -1,0 +1,63 @@
+name: Charts and cards
+
+on:
+  schedule:
+    - cron: "30 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "assets/skills.json"
+      - "assets/langs.json"
+      - "assets/highlights.json"
+      - "assets/langbars.json"
+      - "assets/source/profile.png"
+      - "scripts/radar.py"
+      - "scripts/cards.py"
+      - "scripts/banner.py"
+      - ".github/workflows/charts.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  charts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Pillow (banner only)
+        run: python -m pip install --quiet pillow
+
+      # Hand-authored skill radar (edit assets/skills.json to change it)
+      - name: Skill radar
+        run: python scripts/radar.py --data assets/skills.json -o assets/radar-skills
+
+      # Hand-authored language radar (edit assets/langs.json)
+      - name: Language radar
+        run: python scripts/radar.py --data assets/langs.json -o assets/radar-langs
+
+      # Self-hosted highlight + language-bar cards. Replace github-readme-stats
+      # and github-profile-trophy, whose shared public instances go down.
+      - name: Highlight and language cards
+        run: |
+          python scripts/cards.py \
+            --highlights assets/highlights.json \
+            --langbars assets/langbars.json \
+            --out assets
+
+      # Terminal banner (dithered portrait + Spring Boot boot-log reveal)
+      - name: Banner
+        run: python scripts/banner.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          git diff --staged --quiet || git commit -m "chore: refresh charts and cards"
+          git push

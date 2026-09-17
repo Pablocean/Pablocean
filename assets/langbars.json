@@ -1,0 +1,13 @@
+{
+  "_comment": "Comfort/proficiency bars for the languages card, 0-100. Colors are GitHub linguist colors. Edit and the Charts workflow redraws it.",
+  "title": "Lenguajes que hablo",
+  "subtitle": "confort · experiencia real",
+  "bars": [
+    { "label": "Java",        "value": 92, "color": "#b07219" },
+    { "label": "JavaScript",  "value": 78, "color": "#f1e05a" },
+    { "label": "SQL",         "value": 76, "color": "#336790" },
+    { "label": "TypeScript",  "value": 70, "color": "#3178c6" },
+    { "label": "Python",      "value": 66, "color": "#3572A5" },
+    { "label": "C#",          "value": 62, "color": "#178600" }
+  ]
+}
