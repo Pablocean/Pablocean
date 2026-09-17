@@ -17,16 +17,12 @@
 <br>
 <br>
 
-<!-- AVATAR -->
-<img src="https://avatars.githubusercontent.com/u/93112067?v=4" width="96" height="96" alt="Pablo Perera Marcoleta" style="border-radius:50%">
-
 <br>
 
 <!-- SOCIALS — LinkedIn stays brand blue (glyph vanishes on custom fills). The rest are themed. -->
 <a href="https://www.linkedin.com/in/pablo-perera-marcoleta-759752347/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>&nbsp;&nbsp;
 <a href="https://pablopereramarcoletacv.vercel.app"><img src="https://img.shields.io/badge/Portfolio-16100B?style=for-the-badge&logo=vercel&logoColor=FF6B00" alt="Portfolio"></a>&nbsp;&nbsp;
 <a href="mailto:pablopmarcoletawork@gmail.com"><img src="https://img.shields.io/badge/Email-16100B?style=for-the-badge&logo=gmail&logoColor=FF6B00" alt="Email"></a>&nbsp;&nbsp;
-<a href="https://github.com/Pablocean"><img src="https://img.shields.io/badge/GitHub-16100B?style=for-the-badge&logo=github&logoColor=FF6B00" alt="GitHub"></a>
 
 <br>
 
