@@ -49,7 +49,7 @@ Hi, I'm **Pablo**, a backend engineer and full-stack developer from **Havana, Cu
 
 ## el stack
 
-<img src="https://skillicons.dev/icons?i=java,spring,react,reactnative,nodejs,python,mongodb,postgres,mysql,docker,git,github,tailwind,vite&perline=7" alt="tech stack">
+<img src="https://skillicons.dev/icons?i=java,spring,react,nodejs,python,mongodb,postgres,mysql,docker,git,github,tailwind,vite&perline=7" alt="tech stack">
 
 </div>
 
